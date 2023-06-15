@@ -1,0 +1,74 @@
+how to commit push ,pull and upload on github
+
+1- launch your ec2-instance 
+   install git using (yum insatll git) command and after installation config username and eamil
+   used command ( git config global user.name "enter the user name"
+   used command ( git config global user.email "enter the user email)
+
+2- create one directory for git setup
+
+3- go to that directory and use (git init) command that command setup git enviourment
+
+4- create a sample code file or test file and add some code or meassage in that file
+
+5- after check the status about that file using (git status) command if seeing red line means 
+   that file current on working space we need to push that file into staging area using this command (git add . )
+   after adding file on staging area
+
+6- we need to commit that file commit means save for commit used this command (git commit -m "enter your meassage" and hit enter
+   again check status after commiting you will see working directory is empty that means file successfully uploaded on local repo
+
+7- for checking log use (git log ) command
+
+8- you will see the you commit meassage and commit id it will be alpha numeric and unique
+   for show the file content use (git show and enter atleast 7 charactor for commit id) and you will see the file content
+
+9-and now we uploading that file on github
+
+10- used git remote add origin and paste github repo url and hit enter if you are not facing error it means git 
+    repository successfully add on your system 
+
+11- and now we are pushing our code on github used git push origin master and hit enter 
+
+12- enter your username and password of git hub account if not facing any issue it means succesfully uploaded on github you can check also
+    in your git hub repository
+
+=========================================================================================================================================
+
+and now we need to pull that code from github repository form different region, country, office
+
+1- launch your ec2-instance
+   install git using (yum insatll git) command and after installation config username and eamil
+   used command ( git config global user.name "enter the user name"
+   used command ( git config global user.email "enter the user email)
+
+2- create one directory for git setup
+
+3- go to that directory and use (git init) command that command setup git enviourment
+
+4- enter the github repository url using this command (git remote add origin repo_url) and hit enter
+
+5- and now pull that code from github used (git pull origin master) and hit enter after that 
+   github repo successfully add on your directory
+
+6- used (git log) command to view that code
+
+7- you will see deatils about that file like who commit that file 
+
+8- used git show and enter the commit id and hit enter adn now you will see the deatils about file using vi,vim,nano like editor
+   and edit your code from your side save and quit
+
+9- after check the status about that file using (git status) command if seeing red line means 
+   that file current on working space we need to push that file into staging area using this command (git add . )
+   after adding file on staging area
+
+10-we need to commit that file commit means save for commit used this command (git commit -m "enter your meassage" and hit enter
+   again check status after commiting you will see working directory is empty that means file successfully uploaded on local repo
+
+11- check the status using (git status)
+
+12- used git log 
+
+13- enter the git push origin master command and hit enter and enter the username amd password
+ 
+
